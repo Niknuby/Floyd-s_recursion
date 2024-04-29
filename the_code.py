@@ -1,8 +1,8 @@
 import sys
 
 NO_PATH = sys.maxsize
-
 def floyd_warshall_recursive(graph, i, j, k):
+    """ This is an example of a function level docstring """ 
     if k == -1:
         return graph[i][j]
     without_k = floyd_warshall_recursive(graph, i, j, k-1)
@@ -10,6 +10,7 @@ def floyd_warshall_recursive(graph, i, j, k):
     return min(without_k, with_k)
 
 def floyd_warshall(graph):
+    """ This is an example of a function level docstring """
     n = len(graph)
     for i in range(n):
         for j in range(n):

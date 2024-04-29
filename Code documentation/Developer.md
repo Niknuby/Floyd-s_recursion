@@ -1,0 +1,1 @@
+guides explaining how to set up the development environment, how to contribute to the project, coding standards, etc. 
